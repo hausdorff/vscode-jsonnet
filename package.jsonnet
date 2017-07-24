@@ -70,7 +70,7 @@ package.contributes.DefaultConfiguration(
     "vscode:prepublish": "tsc -p ./",
     compile: "tsc -watch -p ./",
     "compile-once": "tsc -p ./",
-    "compile-site": "browserify ./out/site/main.js > ksonnet.js",
+    "compile-site": "browserify ./out/site/main.js > ./site/ksonnet.js",
     postinstall: "node ./node_modules/vscode/bin/install",
     test: "node ./node_modules/vscode/bin/test"
   },
@@ -85,6 +85,7 @@ package.contributes.DefaultConfiguration(
     typescript: "^2.3.2",
     vscode: "^1.0.0",
     mocha: "^2.3.3",
+    "monaco-editor": "~0.9.0",
     chai: "^3.5.0",
     "@types/chai": "^3.5.0",
     "@types/node": "^6.0.40",
